@@ -11035,19 +11035,27 @@ blockquote {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-brand {
-  font-weight: 800;
+  font-weight: 300;
+}
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: rgba(0, 0, 0, 0.45);
 }
 #mainNav .navbar-toggler {
   font-size: 0.75rem;
-  font-weight: 800;
+  font-weight: 300;
   padding: 0.75rem;
-  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+#mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
+    color: rgba(0, 0, 0, 0.45);
 }
 #mainNav .navbar-nav > li.nav-item > a.nav-link {
   font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.0625em;
-  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.07em;
+}
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+    color: rgba(0, 0, 0, 0.45);
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11069,7 +11077,7 @@ blockquote {
 }
 @media (min-width: 992px) {
   #mainNav {
-    transition: background-color 0.2s;
+    transition: background-color 0.3s;
     /* Force Hardware Acceleration in WebKit */
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
@@ -11079,7 +11087,7 @@ blockquote {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -83px;
-    transition: transform 0.2s;
+    transition: transform 0.3s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
   }
